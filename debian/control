@@ -1,0 +1,15 @@
+Source: python3-django-numberedmodel
+Section: web
+Priority: extra
+Maintainer: Jaap Joris Vens <jj@rtts.eu>
+Build-Depends: debhelper (>= 7), python3, dh-python, python3-setuptools, python3-django
+Standards-Version: 3.9.7
+
+Package: python3-django-numberedmodel
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Recommends: python3-django
+Description: A NumberedModel class for auto-numbering Django models
+ This is a Django application that adds auto-numbering to your models
+ by inheriting them from the NumberedModel class. Suitable for objects
+ such as todo-lists, assignments or rankings.
