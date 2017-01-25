@@ -8,7 +8,7 @@ class NumberedModel(models.Model):
         '''Renumbers the queryset while preserving the instance's number'''
 
         queryset = self.number_with_respect_to()
-        field_name = self.__class__._meta.ordering[0]
+        field_name = self.__class__._meta.ordering[0].lstrip('-')
         this_nr = getattr(self, field_name)
         if this_nr is None:
             this_nr = len(queryset) + 1

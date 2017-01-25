@@ -1,4 +1,11 @@
-python3-django-pandocfield (0.1) stable; urgency=medium
+python3-django-numberedmodel (0.1.1) stable; urgency=medium
+
+  * Fix incorrect package name in changelog
+  * Allow reverse sorting by '-' prefix in meta.ordering field
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Wed, 25 Jan 2017 15:22:37 +0100
+
+python3-django-numberedmodel (0.1) stable; urgency=medium
 
   * Initial release.
 
