@@ -37,8 +37,8 @@ class NumberedModel(models.Model):
         super(NumberedModel, self).save(*args, **kwargs)
 
     def delete(self, *args, **kwargs):
-        self._renumber()
         super(NumberedModel, self).delete(*args, **kwargs)
+        self._renumber()
 
     class Meta:
         abstract = True
