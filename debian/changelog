@@ -1,3 +1,9 @@
+python3-django-numberedmodel (0.1.2) stable; urgency=medium
+
+  * Fix bug in sorting algorithm
+
+ -- Jaap Joris Vens <jj@rtts.eu>  Wed, 25 Oct 2017 17:00:50 +0200
+
 python3-django-numberedmodel (0.1.1) stable; urgency=medium
 
   * Fix incorrect package name in changelog

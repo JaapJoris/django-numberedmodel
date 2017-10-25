@@ -21,7 +21,7 @@ class NumberedModel(models.Model):
         inserted = False
         for other in queryset.exclude(pk=self.pk):
             other_nr = getattr(other, field_name)
-            if other_nr >= this_nr and not inserted:
+            if counter >= this_nr and not inserted:
                 setattr(self, field_name, counter)
                 inserted = True
                 counter += 1
